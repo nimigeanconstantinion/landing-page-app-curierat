@@ -1,0 +1,159 @@
+*{
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(160px,auto) minmax(50px,auto) 1fr minmax(100px,auto);
+    grid-gap: 2px;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    position: relative;
+    width: 95%;
+    height: fit-content;
+    background:#030605;
+        margin: auto;
+    color: #CAE8E1;
+}
+
+.hd.stanga{
+    flex-basis: 250px;
+    position: relative;
+    flex-grow: 1;
+}
+.hd.dreapta{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-basis: 140px;
+    align-items: center;
+}
+.logo{
+    width: 75px;
+    height: 75px;
+
+}
+.logo.st{
+    height:100px;
+    width: 100px;
+    position: absolute;
+    
+    left: -50px;
+}
+.logo.dr{
+    position: absolute;
+    left: 43px;
+
+}
+aside{
+    height: 100px;
+}
+nav{
+    margin: auto;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    background: #8ECEBF;
+}
+.meniu{
+    font-size: 1.3em;
+    background:#0F241F;
+    color:#CAE8E1;
+    margin: 10px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+main{
+    background: #E7F5F2;
+    height: 500px;
+    width: 95%;
+    margin:0px auto;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main.contact{
+    
+    background: #295F52;
+    color: #CAE8E1;
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+}
+
+footer{
+    width:95%;
+    height: 100%;
+    background: #0F241F;
+    margin: auto;
+    color: #CAE8E1;
+}
+
+@media (min-width:768px){
+    body{
+        grid-template-columns: minmax(250px,20%) 1fr;
+        grid-template-rows: minmax(10vh,auto) 1fr minmax(10vh,auto);
+        grid-template-areas: "header header" "aside main" "footer footer";
+    }
+
+    header{
+        grid-area: header;
+        width: 100%;
+    }
+    aside{
+        grid-area: aside;
+        flex-direction: column;
+        height:80vh;
+        width:unset;
+        width: 100%;
+        align-items: flex-end;
+    }
+    nav{
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        width: 100%;
+    }
+    .meniu{
+        width: 90%;
+        font-size: 1.5em;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:7px 0px;
+    }
+    .meniu.home{
+        margin-bottom: auto;
+    }
+
+
+    main{
+        grid-area: main;
+        margin:0px 1%;
+        height: 80vh;
+        width: 100%;
+    }
+    footer{
+        grid-area: footer;
+        width: 100%;
+    }
+
+
+}
