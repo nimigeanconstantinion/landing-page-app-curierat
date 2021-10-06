@@ -7,7 +7,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(160px,auto) minmax(50px,auto) 1fr minmax(100px,auto);
+    grid-template-rows: minmax(155px,auto) minmax(50px,auto) minmax(500px,1fr) minmax(100px,auto);
     grid-gap: 2px;
 
 }
@@ -104,13 +104,17 @@ footer{
     margin: auto;
     color: #CAE8E1;
 }
+footer h2{
+    margin:20px auto;
+}
 
 @media (min-width:768px){
     body{
         grid-template-columns: minmax(250px,20%) 1fr;
-        grid-template-rows: minmax(10vh,auto) 1fr minmax(10vh,auto);
+        grid-template-rows: minmax(100px,auto) minmax(75vh,1fr) minmax(100px,auto);
         grid-template-areas: "header header" "aside main" "footer footer";
-    }
+        grid-gap: 5px;
+     }
 
     header{
         grid-area: header;
@@ -119,7 +123,8 @@ footer{
     aside{
         grid-area: aside;
         flex-direction: column;
-        height:80vh;
+        height:unset;
+        height: 100%;
         width:unset;
         width: 100%;
         align-items: flex-end;
@@ -147,13 +152,15 @@ footer{
     main{
         grid-area: main;
         margin:0px 1%;
-        height: 80vh;
+        height: 100%;
         width: 100%;
     }
     footer{
         grid-area: footer;
         width: 100%;
+        
     }
+ 
 
 
 }
