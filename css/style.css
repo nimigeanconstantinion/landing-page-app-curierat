@@ -21,7 +21,7 @@ header{
     width: 95%;
     height: fit-content;
     background:#030605;
-        margin: auto;
+    margin: auto;
     color: #CAE8E1;
 }
 
@@ -55,7 +55,7 @@ header{
 
 }
 aside{
-    height: 100px;
+    height: fit-content;
 }
 nav{
     margin: auto;
@@ -72,7 +72,7 @@ nav{
     font-size: 1.3em;
     background:#0F241F;
     color:#CAE8E1;
-    margin: 10px 5px;
+    margin: 5px;
     border-radius: 5px;
     text-decoration: none;
     

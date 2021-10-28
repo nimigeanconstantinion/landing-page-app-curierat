@@ -1,0 +1,96 @@
+*,*::before,*::after{
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+ 
+}
+form{
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: left;
+    border: none;
+    align-self: center;
+    margin: 50px auto;
+    max-width:520px;
+    min-width: 300px;
+}
+div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    width: 100%;
+    margin-top: 10px;
+}
+legend{
+    font-size: 2em;
+    color: #0F241F;
+}
+label{
+    font-size: 1.2em;
+    margin-top: 5px;
+    width: 30%;
+    color: #0F241F;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]
+{
+    height: 40px;
+    width: 70%;
+    border: none;
+    background: #CAE8E1;
+    color: #0F241F;
+    font-size: 1.2em;
+
+}
+textarea{
+    border: none;
+    background: #CAE8E1;
+    color: #0F241F;
+    width: 70%;
+    font-size: 1.2em;
+    height: 100px;
+}
+
+form::after{
+    content: " ";
+    clear: both;
+    display: block;
+}
+body::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+button::after{
+    display: block;
+}
+.submit{
+    height: 50px;
+    width:100%;
+    color: #E7F5F2;
+    background: #295F52;
+    margin:10px auto;
+    font-size: 1.5em;
+
+}
+.newbut{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100px;
+}
+.newbut{
+    margin: auto;
+
+}
